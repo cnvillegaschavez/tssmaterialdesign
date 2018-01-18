@@ -1,0 +1,38 @@
+<mat-toolbar color="primary" class="app-container">
+      <mat-toolbar-row>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                        <mat-icon>mood</mat-icon>
+                        <span>Cristian Villegas</span>
+                    </button>
+        
+                    <button mat-menu-item (click)="onLogout()">
+                        <mat-icon>power_settings_new</mat-icon>
+                        <span>Salir</span>
+                    </button>
+        </mat-menu>
+        <span id="id-page-title">TSS Material Design</span>
+
+        <span class="toolbar-fill-remaining-space"></span>
+        <button mat-icon-button>
+            <mat-icon>add_alert</mat-icon>
+        </button>
+        <button mat-icon-button [matMenuTriggerFor]="menuRight">
+            <mat-icon>account_circle</mat-icon>
+        </button>
+        <mat-menu #menuRight="matMenu" yPosition="below">
+            <button mat-menu-item>
+                <mat-icon>mood</mat-icon>
+                <span>Cristian Villegas</span>
+            </button>
+
+            <button mat-menu-item (click)="onLogout()">
+                <mat-icon>power_settings_new</mat-icon>
+                <span>Salir</span>
+            </button>
+        </mat-menu>
+    </mat-toolbar-row>
+</mat-toolbar>

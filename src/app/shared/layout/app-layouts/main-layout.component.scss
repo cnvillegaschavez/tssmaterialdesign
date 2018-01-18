@@ -1,0 +1,21 @@
+.tss-card {
+    width: 400px;
+  }
+  
+  .tss-header-image {
+    background-image: url('http://www.trans-i.com/wp-content/uploads/2016/09/Trans_i_Logo_Site_20th_v2.png');
+    background-size: cover;
+  }
+ 
+  .mat-card-avatar {
+    height: 50px;
+    width: 82px;
+    border-radius: 30%;
+    flex-shrink: 0;
+}
+
+.app-content {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
